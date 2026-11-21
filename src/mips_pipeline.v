@@ -1,4 +1,4 @@
-// mips_pipeline.v - Top-level for full MIPS pipeline
+// mips_pipeline.v - Top module of the full MIPS pipeline
 
 module mips_pipeline(
     input wire clk,
