@@ -74,11 +74,43 @@ Expected output:
 ```text
 .
 ├── README.md
+├── data/
+│ ├── data.mem
+│ └── instr.mem
 ├── images/
-│ ├── [timing-diagram-filename].png
-│ └── [testbench-screenshot-filename].png
-├── [source-files]
-└── [testbench-files]
+│ └── MIPS_Pipeline.png
+├── src/
+│ ├── decode/
+│ │ ├── control.v
+│ │ ├── decode.v
+│ │ ├── idExLatch.v
+│ │ ├── regFile.v
+│ │ └── signExt.v
+│ ├── execute/
+│ │ ├── adder.v
+│ │ ├── alu.v
+│ │ ├── alu_control.v
+│ │ ├── bottom_mux.v
+│ │ ├── ex_mem.v
+│ │ ├── execute.v
+│ │ └── top_mux.v
+│ ├── fetch/
+│ │ ├── adder.v
+│ │ ├── fetch.v
+│ │ ├── if_id_latch.v
+│ │ ├── mem.v
+│ │ ├── mux.v
+│ │ └── pc.v
+│ ├── memory_writeback/
+│ │ ├── and.v
+│ │ ├── data_memory.v
+│ │ ├── mem_wb_latch.v
+│ │ ├── memory.v
+│ │ └── writeback.v
+│ └── top_module.v
+├── tb/
+│ └── mips_pipeline_tb.v
+└── README.md
 ```
 ## Known Issues and Future Improvements
 - [Document any known issue, unverified behavior, or technical debt.]
