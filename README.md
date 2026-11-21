@@ -107,7 +107,7 @@ Expected output:
 │ │ ├── mem_wb_latch.v
 │ │ ├── memory.v
 │ │ └── writeback.v
-│ └── top_module.v
+│ └── mips_pipeline.v
 ├── tb/
 │ └── mips_pipeline_tb.v
 └── README.md
